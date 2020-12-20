@@ -60,3 +60,4 @@ Entre os critérios de avaliação, será considerado:
 * Criatividade
 * Código limpo e organizado
 * Usabilidade dos hooks
+* Utilização de IDE da Jetbrains
