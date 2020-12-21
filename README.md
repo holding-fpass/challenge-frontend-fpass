@@ -34,7 +34,7 @@ a criatividade é parte essencial, portanto, seja criativo.
 
 [FIGMA](https://www.figma.com/file/4boftUcHa8S8qguaUlFCJq/Desafio-Front-End-Fpass?node-id=4%3A14845)
 
-Espera-se também que o candidato gere um arquivo ***Read.me*** ao fim do desafio, explicando as tecnologias utilizadas, a
+Espera-se também que o candidato gere um arquivo ***Read.md*** ao fim do desafio, explicando as tecnologias utilizadas, a
 arquitetura escolhida (se for o caso) e como executar seu projeto.
 
 _A possibilidade de hospedar o projeto em serviços como o [heroku](https://www.heroku.com/) será bem vista mas não é obrigatória_
@@ -60,3 +60,4 @@ Entre os critérios de avaliação, será considerado:
 * Criatividade
 * Código limpo e organizado
 * Usabilidade dos hooks
+* Uso do TypeScript e da tipagem
