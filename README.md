@@ -11,6 +11,7 @@ produto como:
 
 * Práticas ágeis como Kanban / Scrum / Agile.
 * AWS services.
+* GCP
 * Escalabilidade.
 * Micro services e aplicações como serviços.
 * Docker & Kubernetes.
@@ -51,8 +52,6 @@ Devem ser utilizado as seguintes tecnologias e padrões:
 * Qualquer framework de estilo ou criação de estilo própria
 * React
 * TypeScript
-
-Quaisquer outras tecnologias não listadas, são bem vistas e é incentivado o seu uso para agregar valor ao projeto.
 
 ## Critérios de avaliação
 Entre os critérios de avaliação, será considerado:
