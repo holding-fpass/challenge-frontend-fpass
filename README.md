@@ -50,7 +50,7 @@ Não é exigida que siga uma arquitetura de projeto, porém, é indicado como su
 Qualquer outra funcionalidade extra é bem vindo (_e bem visto_ :D) que possa agregar na proposta.
 ## Tecnologias/Padrões para completar o desafio
 Devem ser utilizado as seguintes tecnologias e padrões:
-* Stylec components ou outro framework de estilo
+* Styled components ou outro framework de estilo
 * React
 * TypeScript
 
