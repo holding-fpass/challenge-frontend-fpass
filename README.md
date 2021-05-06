@@ -62,3 +62,6 @@ Entre os critérios de avaliação, será considerado:
 * Usabilidade dos hooks
 * Boa utilização de CSS
 * Uso do TypeScript e da tipagem
+
+## Boa sorte
+Caso tenham quaisquer dúvidas, entrar em contato com mauricio@fpass.com.br
