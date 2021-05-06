@@ -49,7 +49,7 @@ Não é exigida que siga uma arquitetura de projeto, porém, é indicado como su
 Qualquer outra funcionalidade extra é bem vindo (_e bem visto_ :D) que possa agregar na proposta.
 ## Tecnologias/Padrões para completar o desafio
 Devem ser utilizado as seguintes tecnologias e padrões:
-* Qualquer framework de estilo ou criação de estilo própria
+* Stylec components ou outro framework de estilo
 * React
 * TypeScript
 
@@ -59,4 +59,5 @@ Entre os critérios de avaliação, será considerado:
 * Criatividade
 * Código limpo e organizado
 * Usabilidade dos hooks
+* Boa utilização de CSS
 * Uso do TypeScript e da tipagem
