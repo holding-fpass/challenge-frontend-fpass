@@ -64,4 +64,4 @@ Entre os critérios de avaliação, será considerado:
 * Uso do TypeScript e da tipagem
 
 ## Boa sorte
-Caso tenham quaisquer dúvidas, entrar em contato com mauricio@fpass.com.br
+Caso tenha quaisquer dúvidas, entrar em contato com mauricio@fpass.com.br
