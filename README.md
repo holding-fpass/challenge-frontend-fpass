@@ -15,7 +15,8 @@ produto como:
 * Escalabilidade.
 * Micro services e aplicações como serviços.
 * Docker & Kubernetes.
-* Git.
+* Git
+* GitHub
 * React/React Native/VueJs
 * Material Design
 * BDD
