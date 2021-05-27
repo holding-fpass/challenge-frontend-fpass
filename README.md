@@ -54,14 +54,5 @@ Devem ser utilizado as seguintes tecnologias e padrões:
 * React
 * TypeScript
 
-## Critérios de avaliação
-Entre os critérios de avaliação, será considerado:
-* Facilidade de leitura e compreensão do código
-* Criatividade
-* Código limpo e organizado
-* Usabilidade dos hooks
-* Boa utilização de CSS
-* Uso do TypeScript e da tipagem
-
 ## Boa sorte
 Caso tenha quaisquer dúvidas, entrar em contato com mauricio@fpass.com.br
