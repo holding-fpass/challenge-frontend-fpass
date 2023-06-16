@@ -13,7 +13,7 @@ produto como:
 * GCP (Google Cloud Platform).
 * Escalabilidade.
 * Micro services e aplicações como serviços.
-* Docker & Kubernetes.
+* Docker.
 * Git.
 * GitHub.
 * ReactJS/React Native.
@@ -21,7 +21,7 @@ produto como:
 * BDD.
 * Aplicação multi-plataformas.
 
-# O Desafio
+# Desafio
 ## Crie um pequeno sistema utilizando a API da Marvel para que no mínimo pesquise/liste os heróis pelo nome
 Site da API para ser utilizada: [Marvel API](https://developer.marvel.com/)
 
@@ -30,7 +30,7 @@ Espera-se do candidato uma pequena aplicação de no mínimo 3 telas, do qual de
 2) Listagem do herói com sua thumbnail a esquerda.
 3) Página com informações sobre o herói selecionado (descrição).
 
-Espera-se também que o candidato gere um arquivo ***Read.md*** ao fim do desafio, explicando as tecnologias utilizadas, a
+Espera-se também que o candidato gere um arquivo ***READ.md*** ao fim do desafio, explicando as tecnologias utilizadas, a
 arquitetura escolhida (se for o caso) e como executar seu projeto.
 
 _A possibilidade de hospedar o projeto em serviços como o [heroku](https://www.heroku.com/) ou [Vercel](https://vercel.com) será bem vista mas não é obrigatória_
