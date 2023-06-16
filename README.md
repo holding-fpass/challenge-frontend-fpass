@@ -11,6 +11,7 @@ Trabalhamos com tecnologias e arquiteturas de última geração para atender à 
 * Docker.
 * Git.
 * GitHub.
+* NestJS/NodeJS.
 * ReactJS/React Native.
 * Material Design.
 * BDD.
