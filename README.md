@@ -32,11 +32,6 @@ arquitetura escolhida (se for o caso) e como executar seu projeto.
 
 _A possibilidade de hospedar o projeto em serviços como o [heroku](https://www.heroku.com/) ou [Vercel](https://vercel.com) será bem vista mas não é obrigatória_
 
-## Arquitetura de projeto
-Não é exigida que siga uma arquitetura de projeto, porém, é indicado como sugestão as seguintes metodologias:
-
-1) [S.O.L.I.D](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
-
 Qualquer outra funcionalidade extra é bem vindo.
 
 ## Tecnologias para completar o desafio
