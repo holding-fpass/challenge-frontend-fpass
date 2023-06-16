@@ -1,7 +1,7 @@
 # Desafio Front-End - FPass
 
-O Fpass é uma startup Plataforma de Lifelong Learning em Educação Corporativa que ajuda pessoas a liberarem o seu potencial
-humano para processar mais, executar mais rápido e dar espaço para a multidisciplinaridade.
+O Fpass é uma startup Plataforma de Lifelong Learning em Educação Corporativa e Educação que ajuda pessoas a liberarem o seu potencial
+humano para processar mais, executar mais e dar espaço para a multidisciplinaridade.
 
 Atualmente como uma startup EdTech, a mudança e adaptabilidade faz parte do cotidiano de todos que trabalham para
 tornar real a revolução no ensino metódico.
@@ -10,16 +10,15 @@ Nossa equipe trabalha com tecnologias e arquiteturas das mais novas para que pos
 produto como:
 
 * Práticas ágeis como Kanban / Scrum / Agile.
-* AWS services.
-* GCP
+* GCP (Google Cloud Platform).
 * Escalabilidade.
 * Micro services e aplicações como serviços.
 * Docker & Kubernetes.
-* Git
-* GitHub
-* React/React Native/VueJs
-* Material Design
-* BDD
+* Git.
+* GitHub.
+* ReactJS/React Native.
+* Material Design.
+* BDD.
 * Aplicação multi-plataformas.
 
 # O Desafio
@@ -45,14 +44,13 @@ _A possibilidade de hospedar o projeto em serviços como o [heroku](https://www.
 
 Não é exigida que siga uma arquitetura de projeto, porém, é indicado como sugestão as seguintes metodologias:
 1) [S.O.L.I.D](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
-2) [K.I.S.S](https://uxdesign.blog.br/a-origem-do-keep-it-simple-stupid-kiss-b24085dc1327)
 
 Qualquer outra funcionalidade extra é bem vindo (_e bem visto_ :D) que possa agregar na proposta.
 ## Tecnologias/Padrões para completar o desafio
 Devem ser utilizado as seguintes tecnologias e padrões:
-* Styled components ou outro framework de estilo
+* Styled components
 * React
 * TypeScript
 
 ## Boa sorte
-Caso tenha quaisquer dúvidas, entrar em contato com mauricio@fpass.com.br
+Caso tenha quaisquer dúvidas, entrar em contato com edy.rodrigues@fpass.com.br
