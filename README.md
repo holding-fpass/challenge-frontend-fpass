@@ -18,7 +18,7 @@ Trabalhamos com tecnologias e arquiteturas de última geração para atender à 
 * Aplicação multi-plataformas.
 
 ## Desafio
-Crie um pequeno sistema utilizando a API da Marvel para que pesquise/liste os heróis pelo nome
+Crie uma aplicação utilizando a API da Marvel para que pesquise/liste os heróis pelo nome
 
 Portal para desenvolvedores da Marvel: [Marvel for Developers](https://developer.marvel.com/)
 
