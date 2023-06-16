@@ -18,9 +18,11 @@ Trabalhamos com tecnologias e arquiteturas de última geração para atender à 
 
 ## Desafio
 Crie um pequeno sistema utilizando a API da Marvel para que pesquise/liste os heróis pelo nome
+
 Site da API para ser utilizada: [Marvel for Developers](https://developer.marvel.com/)
 
 Espera-se do candidato uma aplicação de 3 telas, no qual deve conter:
+
 1) Uma pesquisa pelo nome ou parte do nome do herói.
 2) Listagem do herói com sua thumbnail.
 3) Página com informações sobre o herói selecionado (descrição).
@@ -32,9 +34,11 @@ _A possibilidade de hospedar o projeto em serviços como o [heroku](https://www.
 
 ## Arquitetura de projeto
 Não é exigida que siga uma arquitetura de projeto, porém, é indicado como sugestão as seguintes metodologias:
+
 1) [S.O.L.I.D](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
 
 Qualquer outra funcionalidade extra é bem vindo.
+
 ## Tecnologias para completar o desafio
 Devem ser utilizado as seguintes tecnologias e padrões:
 * Styled components
