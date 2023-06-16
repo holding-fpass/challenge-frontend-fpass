@@ -20,7 +20,7 @@ Trabalhamos com tecnologias e arquiteturas de última geração para atender à 
 ## Desafio
 Crie um pequeno sistema utilizando a API da Marvel para que pesquise/liste os heróis pelo nome
 
-Site da API para ser utilizada: [Marvel for Developers](https://developer.marvel.com/)
+Portal para desenvolvedores da Marvel: [Marvel for Developers](https://developer.marvel.com/)
 
 Espera-se do candidato uma aplicação de 3 telas, no qual deve conter:
 
