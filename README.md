@@ -1,4 +1,4 @@
-# Desafio Front-End - FPass
+# Desafio Frontend Fpass
 
 O Fpass é uma startup Plataforma de Lifelong Learning em Educação Corporativa e Educação que ajuda pessoas a liberarem o seu potencial
 humano para processar mais, executar mais e dar espaço para a multidisciplinaridade.
