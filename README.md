@@ -21,8 +21,8 @@ produto como:
 * BDD.
 * Aplicação multi-plataformas.
 
-# Desafio
-## Crie um pequeno sistema utilizando a API da Marvel para que no mínimo pesquise/liste os heróis pelo nome
+## Desafio
+Crie um pequeno sistema utilizando a API da Marvel para que no mínimo pesquise/liste os heróis pelo nome
 Site da API para ser utilizada: [Marvel API](https://developer.marvel.com/)
 
 Espera-se do candidato uma pequena aplicação de no mínimo 3 telas, do qual deve conter no mínimo:
