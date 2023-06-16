@@ -2,8 +2,7 @@
 
 O Fpass é uma startup que oferece uma plataforma de Lifelong Learning focada em Educação Corporativa e Educação Formal. Nossa missão é ajudar as pessoas a liberarem seu potencial humano, tornando-as mais produtivas, eficientes e abertas à multidisciplinaridade. Através da nossa plataforma, oferecemos recursos e ferramentas educacionais para um aprendizado contínuo ao longo da vida. Queremos capacitar os indivíduos a adquirirem novos conhecimentos e habilidades, impulsionando seu crescimento pessoal e profissional.
 
-Nossa equipe trabalha com tecnologias e arquiteturas das mais novas para que possa atender a evolução do mercado e do
-produto como:
+Trabalhamos com tecnologias e arquiteturas de última geração para atender à evolução do mercado e do produto:
 
 * Práticas ágeis como Kanban / Scrum / Agile.
 * GCP (Google Cloud Platform).
@@ -18,22 +17,24 @@ produto como:
 * Aplicação multi-plataformas.
 
 ## Desafio
-Crie um pequeno sistema utilizando a API da Marvel para que no mínimo pesquise/liste os heróis pelo nome
-Site da API para ser utilizada: [Marvel API](https://developer.marvel.com/)
+Crie um pequeno sistema utilizando a API da Marvel para que pesquise/liste os heróis pelo nome
+Site da API para ser utilizada: [Marvel for Developers](https://developer.marvel.com/)
 
-Espera-se do candidato uma aplicação de no mínimo 3 telas, do qual deve conter:
+Espera-se do candidato uma aplicação de 3 telas, no qual deve conter:
 1) Uma pesquisa pelo nome ou parte do nome do herói.
-2) Listagem do herói com sua thumbnail a esquerda.
+2) Listagem do herói com sua thumbnail.
 3) Página com informações sobre o herói selecionado (descrição).
 
 Espera-se também que o candidato gere um arquivo ***READ.md*** ao fim do desafio, explicando as tecnologias utilizadas, a
 arquitetura escolhida (se for o caso) e como executar seu projeto.
 
 _A possibilidade de hospedar o projeto em serviços como o [heroku](https://www.heroku.com/) ou [Vercel](https://vercel.com) será bem vista mas não é obrigatória_
+
 ## Arquitetura de projeto
 Não é exigida que siga uma arquitetura de projeto, porém, é indicado como sugestão as seguintes metodologias:
 1) [S.O.L.I.D](https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530)
-Qualquer outra funcionalidade extra é bem vindo (_e bem visto_ :D) que possa agregar na proposta.
+
+Qualquer outra funcionalidade extra é bem vindo.
 ## Tecnologias para completar o desafio
 Devem ser utilizado as seguintes tecnologias e padrões:
 * Styled components
