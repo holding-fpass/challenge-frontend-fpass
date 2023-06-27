@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react'
 import api from "../../services/api"
 
+import Container from '../style'
+
 interface propCharacters {
   name: string,
-  description: string
+  description: string,
+  thumbnail: {
+    path: string,
+    extension: string
+  }
 }
 
 export default function Characters() {
@@ -19,13 +25,14 @@ export default function Characters() {
   }, [] )
     
   return(
-      <div>
-        { characters.map( (item) =>
+      <Container>
+        { characters.map( (character) =>
           <div>
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
+            <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`} alt="" />
+            <h3>{character.name}</h3>
+            <p>{character.description}</p>
           </div> 
         ) }
-      </div>
+      </Container>
   )
 }
