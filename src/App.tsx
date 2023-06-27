@@ -1,10 +1,12 @@
 import Characters from "./pages/Characters";
+import GlobalStyle from './styles/global'
 
 function App() {
 
   return (
     <div className="App">
-      <Characters />
+      <GlobalStyle />
+        <Characters />
     </div>
   );
 }
