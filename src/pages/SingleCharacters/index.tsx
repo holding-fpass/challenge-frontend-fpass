@@ -3,31 +3,31 @@ import api from "../../services/api"
 
 
 import Container from '../style'
+import { useParams } from 'react-router-dom'
 
 interface propCharacters {
-  id?: number
+  id?: number,
+  name?: string
 }
 
-const SingleCharacters: React.FC<propCharacters> = ({
-  id
-}) => {
+const SingleCharacters = () => {
 
-  const [characters, setCaracters] = useState<propCharacters[]>([])
+  const { id } = useParams();
+
+  const [singleCharacter, setSingleCharacter] = useState<propCharacters>({})
 
   useEffect(() => {
     api.get(`/characters/${id}`)
     .then(response => {
-      setCaracters(response.data)
+      setSingleCharacter(response.data.data.results[0])
 
-      console.log(characters)
     })
     .catch(err => console.log('erro', err))
   }, [] )
     
   return(
       <Container>
-        teste
-        {id}
+        {singleCharacter.name}
       </Container>
   )
 }
