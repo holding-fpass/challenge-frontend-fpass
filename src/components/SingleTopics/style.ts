@@ -12,5 +12,4 @@ export const Badges = styled.span`
 
 export const Blocks = styled.section`
   padding: 20px 0;
-  border-bottom: solid 1px #ccc;
 `;
