@@ -5,6 +5,9 @@ import Card from '../../components/Card'
 import Container from '../style'
 import { Row, Columns } from '../../styles/columns'
 
+
+
+
 interface propCharacters {
   id: number,
   name: string,
@@ -29,19 +32,21 @@ export default function Characters() {
     
   return(
       <Container>
-        <Row>
-        { characters.map( (character) =>
-          <Columns grid={3}>
-            <Card 
-              key={character.id}
-              name={character.name}
-              description={character.description}
-              thumbnailUrl={character.thumbnail.path}
-              thumbnailExtension={character.thumbnail.extension}
-            />
-          </Columns> 
-        ) }
-        </Row>
+          <Row>
+          { characters.map( (character) =>
+            <Columns grid={3}>
+              <a href={`/character/${character.id}`}>
+                <Card 
+                  key={character.id}
+                  name={character.name}
+                  description={character.description}
+                  thumbnailUrl={character.thumbnail.path}
+                  thumbnailExtension={character.thumbnail.extension}
+                />
+              </a>
+            </Columns> 
+          ) }
+          </Row>
       </Container>
   )
 }
