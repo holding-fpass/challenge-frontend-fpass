@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import api from "../../services/api"
 
+import Card from '../../components/Card'
 import Container from '../style'
+import { Row, Columns } from '../../styles/columns'
 
 interface propCharacters {
   name: string,
@@ -26,13 +28,18 @@ export default function Characters() {
     
   return(
       <Container>
+        <Row>
         { characters.map( (character) =>
-          <div>
-            <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`} alt="" />
-            <h3>{character.name}</h3>
-            <p>{character.description}</p>
-          </div> 
+          <Columns grid={3}>
+            <Card 
+              name={character.name}
+              description={character.description}
+              thumbnailUrl={character.thumbnail.path}
+              thumbnailExtension={character.thumbnail.extension}
+            />
+          </Columns> 
         ) }
+        </Row>
       </Container>
   )
 }
