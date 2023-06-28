@@ -1,5 +1,5 @@
 import { 
-  ImgContainer,
+  CardContainer,
   Thumbnail,
   Title,
   Description
@@ -21,13 +21,13 @@ const Card: React.FC<PropsCard> = ({
 }) => {
     
   return(
-    <ImgContainer>
+    <CardContainer>
       <Thumbnail 
         src={`${thumbnailUrl}.${thumbnailExtension}`} 
         alt={name} />
       <Title children={name} />
       <Description children={description} />
-    </ImgContainer>
+    </CardContainer>
   )
 }
 

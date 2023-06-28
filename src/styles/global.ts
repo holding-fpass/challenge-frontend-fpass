@@ -27,6 +27,14 @@ const GlobalStyle = createGlobalStyle<{}>`
     box-sizing: inherit;
   }
 
+  h1, h2{
+    margin-bottom: 20px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
   body {
     font-family: marvelregular, sans-serif;
     font-size: 16;

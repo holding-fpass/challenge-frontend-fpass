@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const ImgContainer = styled.div`
+export const CardContainer = styled.div`
   width: 100%;
   cursor: pointer;
 
@@ -30,6 +30,7 @@ export const Thumbnail = styled.img`
 export const Title = styled.h3`
   font-size: 22px;
   margin-bottom: 5px;
+  color: #000;
 `;
 
 export const Description = styled.p`

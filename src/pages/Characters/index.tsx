@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import api from "../../services/api"
+import { Link } from 'react-router-dom'
 
 import Card from '../../components/Card'
 import Container from '../style'
@@ -35,7 +36,7 @@ export default function Characters() {
           <Row>
           { characters.map( (character) =>
             <Columns grid={3}>
-              <a href={`/character/${character.id}`}>
+              <Link to={`/character/${character.id}`}>
                 <Card 
                   key={character.id}
                   name={character.name}
@@ -43,7 +44,7 @@ export default function Characters() {
                   thumbnailUrl={character.thumbnail.path}
                   thumbnailExtension={character.thumbnail.extension}
                 />
-              </a>
+              </Link>
             </Columns> 
           ) }
           </Row>

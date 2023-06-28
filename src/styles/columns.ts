@@ -17,7 +17,7 @@ export const Row = styled.div`
 
 export const Columns = styled.div<GridProps>`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-right: -15px;
   margin-left: -15px;
   padding: 2.4rem;
