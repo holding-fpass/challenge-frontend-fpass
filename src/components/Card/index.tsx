@@ -22,7 +22,9 @@ const Card: React.FC<PropsCard> = ({
     
   return(
     <ImgContainer>
-      <Thumbnail src={`${thumbnailUrl}.${thumbnailExtension}`} alt="" />
+      <Thumbnail 
+        src={`${thumbnailUrl}.${thumbnailExtension}`} 
+        alt={name} />
       <Title children={name} />
       <Description children={description} />
     </ImgContainer>

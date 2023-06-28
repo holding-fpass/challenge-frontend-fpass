@@ -6,6 +6,7 @@ import Container from '../style'
 import { Row, Columns } from '../../styles/columns'
 
 interface propCharacters {
+  id: number,
   name: string,
   description: string,
   thumbnail: {
@@ -32,6 +33,7 @@ export default function Characters() {
         { characters.map( (character) =>
           <Columns grid={3}>
             <Card 
+              key={character.id}
               name={character.name}
               description={character.description}
               thumbnailUrl={character.thumbnail.path}
