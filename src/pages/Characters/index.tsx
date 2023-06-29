@@ -23,6 +23,8 @@ interface propCharacters {
 export default function Characters() {
 
   const [characters, setCaracters] = useState<propCharacters[]>([])
+  const [filteredResults, setFilteredResults] = useState<propCharacters[]>([])
+  const [searchInput, setSearchInput] = useState('')
 
   useEffect(() => {
     api.get('/characters')
@@ -32,14 +34,35 @@ export default function Characters() {
     .catch(err => console.log('erro', err))
   }, [] )
 
+
+  const handleSearchCharachters = (searchValue: string) => {
+
+    setSearchInput(searchValue)
+
+    if (searchInput !== '') {
+      const filteredData: any = characters.filter((item) => {
+          return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
+      })
+      setFilteredResults(filteredData)
+  }
+  else{
+      setFilteredResults(characters)
+  }
+
+  }
+
     
   return(
       <Container>
         {characters.length > 0 ? (
           <>
             <h1>Personagem</h1>
+
+              <input 
+                type="text" 
+                onChange={(event) => handleSearchCharachters(event.target.value)} />
             <Row>
-            { characters.map( (character) =>
+            { filteredResults.map( (character) =>
               <Columns grid={3}>
                 <Link to={`/character/${character.id}`}>
                   <Card 

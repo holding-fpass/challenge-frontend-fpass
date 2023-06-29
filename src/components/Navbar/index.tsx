@@ -24,11 +24,6 @@ const MainNavBar = () => {
               Personagens
             </Link>
           </NavItems>
-          <NavItems>
-            <Link to={`/buscar-personagens`}>
-              Buscar personagens
-            </Link>
-          </NavItems>
         </div>
       </Container>
     </NavBar>
