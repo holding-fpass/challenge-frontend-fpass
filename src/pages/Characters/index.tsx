@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Card from '../../components/Card'
 import Container from '../style'
 import { Row, Columns } from '../../styles/columns'
+import Loading from '../../components/Loading'
 
 
 
@@ -33,6 +34,7 @@ export default function Characters() {
     
   return(
       <Container>
+        {characters.length > 0 ? (
           <Row>
           { characters.map( (character) =>
             <Columns grid={3}>
@@ -46,8 +48,11 @@ export default function Characters() {
                 />
               </Link>
             </Columns> 
-          ) }
+          )}
           </Row>
+        ) : (
+          <Loading />
+        )}
       </Container>
   )
 }

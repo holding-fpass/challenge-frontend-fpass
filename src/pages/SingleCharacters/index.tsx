@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom'
 import { Columns, Row } from '../../styles/columns'
 import SingleTopics from '../../components/SingleTopics'
 import Button from '../../components/Button'
+import Loading from '../../components/Loading'
 
 interface propCharacters {
   id: number,
@@ -45,35 +46,42 @@ const SingleCharacters = () => {
     .catch(err => console.log('erro', err))
   }, [id] )
 
+  console.log(singleCharacter)
+
   return(
       <Container>
-        <Row>
-          <Columns grid={3}>
-            <SingleThumbnail 
-              src={`${singleCharacter.thumbnail?.path}.${singleCharacter.thumbnail?.extension}`} 
-              alt={singleCharacter.name} />
-          </Columns>
-          <Columns grid={8}>
-            <h1>{singleCharacter.name}</h1>
-            <p>{singleCharacter.description}</p>
-            
-            <SingleTopics 
-              title="Eventos" 
-              items={singleCharacter?.events?.items} 
-              />
+        {singleCharacter.id ? (
+          <Row>
+            <Columns grid={3}>
+              <SingleThumbnail 
+                src={`${singleCharacter.thumbnail?.path}.${singleCharacter.thumbnail?.extension}`} 
+                alt={singleCharacter.name} />
+            </Columns>
+            <Columns grid={8}>
+              <h1>{singleCharacter.name}</h1>
+              <p>{singleCharacter.description}</p>
+              
+              <SingleTopics 
+                title="Eventos" 
+                items={singleCharacter?.events?.items} 
+                />
 
-            <SingleTopics 
-              title="Séries" 
-              items={singleCharacter?.series?.items} 
-              />
+              <SingleTopics 
+                title="Séries" 
+                items={singleCharacter?.series?.items} 
+                />
 
-            <SingleTopics 
-              title="Histórias" 
-              items={singleCharacter?.stories?.items} 
-              />
+              <SingleTopics 
+                title="Histórias" 
+                items={singleCharacter?.stories?.items} 
+                />
 
-          </Columns>
-        </Row>
+            </Columns>
+          </Row>
+        ) : (
+          <Loading />
+        )}
+        
         
         <Button color='primary' url="/" label="Voltar" />
       </Container>
