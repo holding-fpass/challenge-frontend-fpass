@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 
 export const StyledButton = styled.button<{
-    colorBackGround: string;
-    colorFont: string;
+    colorbackground?: string;
+    colorfont: string;
   }>`
-    padding: 0.9375rem 1.75rem;
+    padding: 0.7rem 1.75rem;
     cursor: pointer;
     border-radius: 5px;
-    background-color: ${(p) => (p.colorBackGround)} !important;
-    color: ${(p) => (p.colorFont)};
+    background-color: ${(p) => (p.colorbackground)} !important;
+    color: ${(p) => (p.colorfont)};
     border: none;
   
     :disabled{

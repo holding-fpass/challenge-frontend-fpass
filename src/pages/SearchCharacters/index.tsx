@@ -21,11 +21,11 @@ interface propCharacters {
   }
 }
 
-export default function Characters() {
+export default function SearchCharacters() {
 
   const [characters, setCaracters] = useState<propCharacters[]>([])
   const [filteredResults, setFilteredResults] = useState<propCharacters[]>([])
-  const [searchInput, setSearchInput] = useState('')
+  const [searchInput, setSearchInput] = useState("")
 
   useEffect(() => {
     api.get('/characters')
@@ -40,16 +40,10 @@ export default function Characters() {
 
     setSearchInput(searchValue)
 
-    if (searchInput !== '') {
-      const filteredData: any = characters.filter((item) => {
-          return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
-      })
-      setFilteredResults(filteredData)
-  }
-  else{
-      setFilteredResults(characters)
-  }
-
+    const filteredData: any = characters.filter((item) => {
+      return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
+    })
+    setFilteredResults(filteredData)
   }
 
     
@@ -57,21 +51,16 @@ export default function Characters() {
       <Container>
         {characters.length > 0 ? (
           <>
-            <Row>
-              <Columns grid={5}>
-                <h1>Personagem</h1>
-              </Columns>
-              <Columns grid={4}>
-                <Label 
-                  htmlFor="searchCharacters">
-                    Filtrar personagens
-                  </Label>
-                <Input 
-                  id="searchCharacters"
-                  type="text" 
-                  onChange={(event: any) => handleSearchCharachters(event.target.value)} />
-              </Columns>
-            </Row>
+
+            <h1>Buscar personagem</h1>
+            <Label 
+              htmlFor="searchCharacters">
+                Digite o nome do herói
+              </Label>
+            <Input 
+              id="searchCharacters"
+              type="text" 
+              onChange={(event: any) => handleSearchCharachters(event.target.value)} />
             <Row>
             { filteredResults.map( (character) =>
               <Columns grid={3}>

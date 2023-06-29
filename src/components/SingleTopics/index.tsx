@@ -19,7 +19,7 @@ const SingleTopics: React.FC<PropsSingleTopics> = ({
         <Blocks>
         <h3>{title}</h3>
         {items?.map((item: any) =>
-          <Badges>
+          <Badges key={item.name}>
             {item.name}
           </Badges>
         )}

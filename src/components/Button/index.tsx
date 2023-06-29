@@ -15,8 +15,8 @@ const Button: React.FC<ButtonProps> = ({
 }) => (
   <Link to={url}>
     <StyledButton
-      colorBackGround={color === 'primary' ? '#e62429' : 'transparent'}
-      colorFont={color === 'primary' ? '#FFFFFF' : '#3B4252'}
+      colorbackground={color === 'primary' ? '#e62429' : 'transparent'}
+      colorfont={color === 'primary' ? '#FFFFFF' : '#3B4252'}
     >
       <span>
         {label}
