@@ -19,6 +19,7 @@ export const Thumbnail = styled.img`
   object-fit: cover;
   box-shadow: 0px 5px 6px rgba(0,0,0, .4);
   transition: .3s;
+  border-radius: 5px;
   top: 0;
   position: relative;
 

@@ -5,7 +5,7 @@ import api from "../../services/api"
 import Container from '../style'
 import { SingleThumbnail} from './style'
 import { useParams } from 'react-router-dom'
-import { Columns, Row } from '../../styles/columns'
+import { Columns, Row } from '../../styles/Columns'
 import SingleTopics from '../../components/SingleTopics'
 import Button from '../../components/Button'
 import Loading from '../../components/Loading'
