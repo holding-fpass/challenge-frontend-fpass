@@ -9,6 +9,7 @@ export const NavBar = styled.div`
   display: flex;
   background: #000;
   box-shadow: 0 -2px 6px #00000080;
+  margin-bottom: 40px;
 
   div{
     display: flex;
@@ -23,5 +24,16 @@ export const NavbarBrand = styled.div`
 `;
 
 export const NavItems = styled.div`
-  margin: 0 5px;
+  margin: 0 10px;
+
+
+  a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+
+    &:hover{
+      color: #e62429;
+    }
+  }
 `;

@@ -5,6 +5,8 @@ import {
   NavItems
 } from './style';
 
+import { Link } from 'react-router-dom';
+
 
 const MainNavBar = () => {
 
@@ -18,14 +20,14 @@ const MainNavBar = () => {
         </NavbarBrand>
         <div>
           <NavItems>
-            <button type='button'>
+            <Link to={`/`}>
               Personagens
-            </button>
+            </Link>
           </NavItems>
           <NavItems>
-            <button type='button'>
-              Personagens
-            </button>
+            <Link to={`/buscar-personagens`}>
+              Buscar personagens
+            </Link>
           </NavItems>
         </div>
       </Container>

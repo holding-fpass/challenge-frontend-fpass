@@ -31,25 +31,29 @@ export default function Characters() {
     })
     .catch(err => console.log('erro', err))
   }, [] )
+
     
   return(
       <Container>
         {characters.length > 0 ? (
-          <Row>
-          { characters.map( (character) =>
-            <Columns grid={3}>
-              <Link to={`/character/${character.id}`}>
-                <Card 
-                  key={character.id}
-                  name={character.name}
-                  description={character.description}
-                  thumbnailUrl={character.thumbnail.path}
-                  thumbnailExtension={character.thumbnail.extension}
-                />
-              </Link>
-            </Columns> 
-          )}
-          </Row>
+          <>
+            <h1>Personagem</h1>
+            <Row>
+            { characters.map( (character) =>
+              <Columns grid={3}>
+                <Link to={`/character/${character.id}`}>
+                  <Card 
+                    key={character.id}
+                    name={character.name}
+                    description={character.description}
+                    thumbnailUrl={character.thumbnail.path}
+                    thumbnailExtension={character.thumbnail.extension}
+                  />
+                </Link>
+              </Columns> 
+            )}
+            </Row>
+          </>
         ) : (
           <Loading />
         )}

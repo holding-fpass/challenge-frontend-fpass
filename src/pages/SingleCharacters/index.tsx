@@ -10,27 +10,26 @@ import SingleTopics from '../../components/SingleTopics'
 import Button from '../../components/Button'
 import Loading from '../../components/Loading'
 
+
+export type TopicsCharacters = {
+  items?: Object,
+  returned: number
+}
+
 interface propCharacters {
   id: number,
   name: string,
   description: string,
-  events?: {
-    items?: any,
-    returned: number
-  },
-  series?: {
-    items?: any,
-    returned: number
-  },
-  stories?: {
-    items?: any,
-    returned: number
-  },
+  events?: TopicsCharacters,
+  series?: TopicsCharacters,
+  stories?: TopicsCharacters,
+  comics?: TopicsCharacters,
   thumbnail?: {
     path?: string,
     extension?: string
   }
 }
+
 
 const SingleCharacters = () => {
 
@@ -46,8 +45,8 @@ const SingleCharacters = () => {
     .catch(err => console.log('erro', err))
   }, [id] )
 
-  console.log(singleCharacter)
 
+  
   return(
       <Container>
         {singleCharacter.id ? (
@@ -74,6 +73,11 @@ const SingleCharacters = () => {
               <SingleTopics 
                 title="Histórias" 
                 items={singleCharacter?.stories?.items} 
+                />
+
+              <SingleTopics 
+                title="histórias em quadrinhos" 
+                items={singleCharacter?.comics?.items} 
                 />
 
             </Columns>
