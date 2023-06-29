@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 import Card from '../../components/Card'
 import Container from '../style'
-import { Row, Columns } from '../../styles/columns'
+import { Input, Label } from '../../styles/Form'
+import { Row, Columns } from '../../styles/Columns'
 import Loading from '../../components/Loading'
 
 
@@ -56,11 +57,21 @@ export default function Characters() {
       <Container>
         {characters.length > 0 ? (
           <>
-            <h1>Personagem</h1>
-
-              <input 
-                type="text" 
-                onChange={(event) => handleSearchCharachters(event.target.value)} />
+            <Row>
+              <Columns grid={5}>
+                <h1>Personagem</h1>
+              </Columns>
+              <Columns grid={4}>
+                <Label 
+                  htmlFor="searchCharacters">
+                    Filtrar personagens
+                  </Label>
+                <Input 
+                  id="searchCharacters"
+                  type="text" 
+                  onChange={(event: any) => handleSearchCharachters(event.target.value)} />
+              </Columns>
+            </Row>
             <Row>
             { filteredResults.map( (character) =>
               <Columns grid={3}>
