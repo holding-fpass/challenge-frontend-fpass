@@ -14,7 +14,7 @@ import Loading from '../../components/Loading'
 interface propCharacters {
   id: number,
   name: string,
-  description: string,
+  description?: string,
   thumbnail: {
     path: string,
     extension: string
@@ -63,7 +63,7 @@ export default function SearchCharacters() {
               onChange={(event: any) => handleSearchCharachters(event.target.value)} />
             <Row>
             { filteredResults.map( (character) =>
-              <Columns grid={3}>
+              <Columns grid={4}>
                 <Link to={`/character/${character.id}`}>
                   <Card 
                     key={character.id}

@@ -26,7 +26,6 @@ export const NavbarBrand = styled.div`
 export const NavItems = styled.div`
   margin: 0 10px;
 
-
   a{
     color: #fff;
     text-transform: uppercase;
@@ -36,4 +35,5 @@ export const NavItems = styled.div`
       color: #e62429;
     }
   }
+
 `;

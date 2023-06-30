@@ -3,12 +3,12 @@ import {
   Badges
 } from "./style"
 
-interface PropsSingleTopics {
+interface PropsTopics {
   items?: any,
   title: string
 }
 
-const SingleTopics: React.FC<PropsSingleTopics> = ({
+const Topics: React.FC<PropsTopics> = ({
   items,
   title
 }) => {
@@ -29,4 +29,4 @@ const SingleTopics: React.FC<PropsSingleTopics> = ({
   )
 }
 
-export default SingleTopics;
+export default Topics;

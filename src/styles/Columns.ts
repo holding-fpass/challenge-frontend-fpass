@@ -10,21 +10,16 @@ export const Row = styled.div`
   margin-right: -15px;
   margin-left: -15px;
 
-  > div{
-    padding: 2.4rem;
-  } 
 `;
 
 export const Columns = styled.div<GridProps>`
-  display: flex;
-  flex-direction: column;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding: 2.4rem;
+  padding: 1rem .6rem;
+  box-sizing: border-box; 
   flex: 0 0 ${props => (props.grid ? props.grid / 12 * 100 : '8.33333')}%;
   max-width: ${props => (props.grid ? props.grid / 12 * 100 : '8.33333')}%; 
 
-  @media only screen and (max-width: 600px){
+
+  @media only screen and (max-width: 900px){
     flex: 0 0 100%;
     max-width: 100%;
   }

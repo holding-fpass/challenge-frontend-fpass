@@ -11,7 +11,7 @@ import Card from '../../components/Card'
 interface propCharacters {
   id: number,
   name: string,
-  description: string,
+  description?: string,
   thumbnail: {
     path: string,
     extension: string
@@ -39,9 +39,9 @@ export default function ListCharacters() {
             <h1>Personagem</h1>
             <Row>
             { characters.map( (character) =>
-              <Columns grid={3}>
+              <Columns grid={4}>
                 <Link to={`/character/${character.id}`}>
-                  <Card 
+                  <Card
                     key={character.id}
                     name={character.name}
                     description={character.description}

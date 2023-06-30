@@ -6,7 +6,7 @@ import Container from '../style'
 import { SingleThumbnail} from './style'
 import { useParams } from 'react-router-dom'
 import { Columns, Row } from '../../styles/Columns'
-import SingleTopics from '../../components/SingleTopics'
+import Topics from '../../components/Topics'
 import Button from '../../components/Button'
 import Loading from '../../components/Loading'
 
@@ -60,22 +60,22 @@ const SingleCharacters = () => {
               <h1>{singleCharacter.name}</h1>
               <p>{singleCharacter.description}</p>
               
-              <SingleTopics 
+              <Topics 
                 title="Eventos" 
                 items={singleCharacter?.events?.items} 
                 />
 
-              <SingleTopics 
+              <Topics 
                 title="Séries" 
                 items={singleCharacter?.series?.items} 
                 />
 
-              <SingleTopics 
+              <Topics 
                 title="Histórias" 
                 items={singleCharacter?.stories?.items} 
                 />
 
-              <SingleTopics 
+              <Topics 
                 title="histórias em quadrinhos" 
                 items={singleCharacter?.comics?.items} 
                 />
