@@ -19,7 +19,7 @@ Copie o arquivo `env-example` como `.env`
 ```
 cp env-example .env
 ```
-Insira as chaves nas variáeis indicadas
+Insira as chaves nas variáveis indicadas
 
 ## Desenvolvimento
 
@@ -27,4 +27,10 @@ Use o comando `yarn start`.
 
 ```
 yarn start
+```
+
+## Realizar build do projeto via Docker
+
+```
+yarn build
 ```
