@@ -40,7 +40,7 @@ export default function SearchCharacters() {
 
     setSearchInput(searchValue)
 
-    const filteredData: any = characters.filter((item) => {
+    const filteredData = characters.filter((item) => {
       return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
     })
     setFilteredResults(filteredData)
@@ -60,7 +60,9 @@ export default function SearchCharacters() {
             <Input 
               id="searchCharacters"
               type="text" 
-              onChange={(event: any) => handleSearchCharachters(event.target.value)} />
+              onChange={(event: 
+                React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+              ) => handleSearchCharachters(event.target.value)} />
             <Row>
             { filteredResults.map( (character) =>
               <Columns grid={4}>

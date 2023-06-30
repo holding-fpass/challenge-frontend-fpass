@@ -12,7 +12,7 @@ import Loading from '../../components/Loading'
 import { useNavigate } from 'react-router-dom';
 
 export type TopicsCharacters = {
-  items?: Object,
+  items?: Object[]
   returned: number
 }
 

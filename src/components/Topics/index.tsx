@@ -4,7 +4,7 @@ import {
 } from "./style"
 
 interface PropsTopics {
-  items?: any,
+  items?:Object[]
   title: string
 }
 
@@ -15,15 +15,15 @@ const Topics: React.FC<PropsTopics> = ({
     
   return(
     <>
-      {items?.length > 0 && (
+      {items && (
         <Blocks>
-        <h3>{title}</h3>
-        {items?.map((item: any) =>
-          <Badges key={item.name}>
-            {item.name}
-          </Badges>
-        )}
-      </Blocks>
+          <h3>{title}</h3>
+          {items?.map((item: any) =>
+            <Badges key={item.name}>
+              {item.name}
+            </Badges>
+          )}
+        </Blocks>
       )}
     </>
   )
