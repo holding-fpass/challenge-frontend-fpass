@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const StyledButton = styled.button<{
     colorbackground?: string;
+    onClick?: any;
     colorfont: string;
   }>`
     padding: 0.7rem 1.75rem;

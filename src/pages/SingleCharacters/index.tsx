@@ -9,7 +9,7 @@ import { Columns, Row } from '../../styles/Columns'
 import Topics from '../../components/Topics'
 import Button from '../../components/Button'
 import Loading from '../../components/Loading'
-
+import { useNavigate } from 'react-router-dom';
 
 export type TopicsCharacters = {
   items?: Object,
@@ -35,6 +35,7 @@ const SingleCharacters = () => {
 
   const { id } = useParams();
   const [singleCharacter, setSingleCharacter] = useState<propCharacters>(Object)
+  const navigate = useNavigate();
 
   useEffect(() => {
     api.get(`/characters/${id}`)
@@ -86,8 +87,7 @@ const SingleCharacters = () => {
           <Loading />
         )}
         
-        
-        <Button color='primary' url="/" label="Voltar" />
+        <Button color='primary' onClick={() => navigate(-1)} label="Voltar" />
       </Container>
   )
 }
