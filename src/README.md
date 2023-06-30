@@ -1,10 +1,17 @@
 # Documentação - Desafio Frontend FPass
 
-
 ## Requisitos
 
 - Node.js (v20.2.0)
 - yarn (1.22.19)
+
+
+## Tecnologias usadas
+
+- ReactJs
+- TypeScript
+- Styled-components
+
 
 ## Setup
 
